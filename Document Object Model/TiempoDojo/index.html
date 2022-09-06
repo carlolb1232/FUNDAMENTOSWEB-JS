@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">  
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="nav-content">
+        <h1>Dojo Weather</h1>
+        <ul>
+          <li onclick="showAlert(this)">Burbank</li>
+          <li onclick="showAlert(this)">Chicago</li>
+          <li onclick="showAlert(this)">Dallas</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="content-container">
+      <div class="place-data">
+        <h2>San Jose</h2>
+        <div class="temperature">
+          <p>Show temperature in </p>
+          <select name="degree" id="degree" onchange="changeDegrees(this)">
+            <option>°C</option>
+            <option>°F</option>
+          </select>
+        </div>
+      </div>
+      <div class="line">
+      </div>
+      <div class="weather-cards">
+        <div class="weather-card">  
+          <h3>
+            Today
+          </h3>
+          <img src="./assets/some_rain.png" alt="some rain">
+          <p>some rain</p>
+          <div class="temperature-degrees">
+            <p class="temperature-degree max">
+              <span>24</span>°
+            </p>
+            <p class="temperature-degree min">
+              <span>18</span>°
+            </p>
+          </div>
+        </div>
+        <div class="weather-card">
+          <h3>
+            Tomorrow
+          </h3>
+          <img src="./assets/some_sun.png" alt="some sun">
+          <p>some sun</p>
+          <div class="temperature-degrees">
+            <p class="temperature-degree max">
+              <span>27</span>°
+            </p>
+            <p class="temperature-degree min">
+              <span>19</span>°
+            </p>
+          </div>
+        </div>
+        <div class="weather-card">
+          <h3>
+            Friday
+          </h3>
+          <img src="./assets/some_clouds.png" alt="some clouds">
+          <p>some clouds</p>
+          <div class="temperature-degrees">
+            <p class="temperature-degree max">
+              <span>21</span>°
+            </p>
+            <p class="temperature-degree min">
+              <span>16</span>°
+            </p>
+          </div>
+        </div>
+        <div class="weather-card">
+          <h3>
+            Saturday
+          </h3>
+          <img src="./assets/some_sun.png" alt="some sun">
+          <p>some sun</p>
+          <div class="temperature-degrees">
+            <p class="temperature-degree max">
+              <span>26</span>°
+            </p>
+            <p class="temperature-degree min">
+              <span>21</span>°
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cookie-container">
+        <img src="./assets/cookie.png" alt="cookie">
+        <div class="cookie-content">
+          <h2>
+            Stop! Cookie time
+          </h2>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+          </p>
+        </div>
+        <button onclick="deleteCookie()">
+          I Accept
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

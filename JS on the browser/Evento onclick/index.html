@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento onClick</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">  
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <h1>Dojonary</h1>
+      <input type="text" name="search" id="search" placeholder="Search">
+      <button onclick="change(this)">
+        Login
+      </button>
+    </nav>
+    <div class="content">
+      <div class="definitions">
+        <div class="definition">
+          <div class="word">
+            <h2>ninja</h2>
+            <div class="caracteristics">
+              <h3>noun</h3>
+              <p>Plural: <span>ninjas</span></p>
+              <button onclick="alerta()">13 likes</button>
+            </div>
+          </div>
+          <div class="description">
+            <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+          </div>
+        </div>
+        <div class="definition">
+          <div class="word">
+            <h2>ninja</h2>
+            <div class="caracteristics">
+              <h3>noun</h3>
+              <p>Plural: <span>ninjas</span></p>
+              <button onclick="alerta()">37 likes</button>
+            </div>
+          </div>
+          <div class="description">
+            <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+          </div>
+        </div>
+      </div>
+      <div class="addDefinition">
+        <p>Dojonary is defined by <span>YOU</span></p>
+        <button onclick="remove(this)">
+          Add Definition
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

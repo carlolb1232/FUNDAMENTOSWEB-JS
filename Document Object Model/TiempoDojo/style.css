@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+nav{
+  background-color: rgb(159,197,248);
+  color: white;
+}
+
+.container{
+  max-width: 60vw;
+  margin: 0  auto;
+}
+
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.nav-content h1{
+  font-size: 45px;
+}
+
+.nav-content ul{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-content li{
+  list-style: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  gap: 25px;
+  width: 100%;
+  /* position: relative; */
+}
+
+.place-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-data h2{
+  font-size: 35px;
+}
+
+.temperature{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.temperature select{
+  padding: 5px;
+}
+
+.line{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.weather-cards{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.weather-card{
+  padding: 10px 27px;
+  /* min-width: 200px; */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238,238,238);
+  margin-bottom: 15px;
+}
+
+.weather-card h3{
+  font-size: 30px;
+}
+
+.weather-card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 109px;
+}
+
+.temperature-degrees{
+  width: 100%;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.font-size-15{
+  font-size: 15px;
+}
+
+.max{
+  color: rgb(207,42,39);
+}
+
+.min{
+  color: rgb(43,120,228);
+}
+
+.cookie-container{
+  background-color: rgb(238,238,238);
+  border: 3px solid black;
+  display: flex;
+  gap: 10px;
+  padding: 10px 15px;
+  align-items: center;
+  position: fixed;
+  bottom: 35vh;
+  /* min-width: 60vh; */
+  max-width: calc(60vw - 30px);
+}
+
+.cookie-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.cookie-container button{
+  padding: 5px 5px;
+  background-color: rgb(159,197,248);
+  box-shadow: 2px 2px 0px 1px black;
+  cursor: pointer;
+}
+

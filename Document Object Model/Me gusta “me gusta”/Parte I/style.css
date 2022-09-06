@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.container{
+  display: flex;
+  max-width: 30vw;
+  flex-direction: column;
+  padding: 10px 15px;
+  margin: 10px 15px;
+  gap: 25px;
+  border: 2px solid black;
+}
+
+.first-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-row button{
+  background-color: rgb(255,217,102);
+  padding: 5px 15px;
+  box-shadow: 2px 3px 0px 1px black;
+  cursor: pointer;
+}
+
+.like-area{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.second-row{
+  font-size: 22px;
+}

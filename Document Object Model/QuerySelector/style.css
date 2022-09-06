@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#count{
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+button{
+  margin-top: 15px;
+  background-color: rgb(86, 173, 86);
+  padding: 10px 15px;
+  color: white;
+  font-size: 25px;
+}
